@@ -8,6 +8,10 @@ import matplotlib.pyplot as plt
 import locale
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
+import sys
+print("defaultencoding:", sys.getdefaultencoding())
+print("stdout.encoding:", sys.stdout.encoding)
+
 # DB 연결
 engine = create_engine("mysql+pymysql://root:비밀번호@localhost:3306/bus_db")
 
